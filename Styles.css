@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: url('Images/Matcha Hero Image.jpg') center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #F9F5E5;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3D6B3B80;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.navigation .logo img {
+    height: 60px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.navigation nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navigation nav ul li a img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Hero Section */
+.hero {
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .overlay {
+    padding: 30px;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.hero .overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FEFEFE;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Offerings Section */
+.offerings {
+    background-color: #F9F5E5;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.offerings h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #3D6B3B;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    color: #3D6B3B;
+}
+
+/* Footer */
+footer {
+    background-color: #CCC5AB;
+    color: #3D6B3B;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+footer .icons a img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer .quick-links ul {
+    list-style: none;
+}
+
+footer .quick-links ul li {
+    margin-bottom: 10px;
+}
+
+footer .quick-links ul li a {
+    color: #3D6B3B;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    height: 60px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.credits {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+}
