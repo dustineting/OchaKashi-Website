@@ -41,7 +41,7 @@ body {
 }
 
 .navigation nav ul li a {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
@@ -52,9 +52,15 @@ body {
     vertical-align: middle;
 }
 
+.navigation nav ul li a:hover {
+    color: #CCC5AB;
+    transition: color 0.5s ease;
+}
+
+/* ===== Index Page ===== */
 /* Hero Section */
 .hero {
-    height: 400px;
+    height: 50vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -62,6 +68,7 @@ body {
 }
 
 .hero .overlay {
+    background-color: #00000050;
     padding: 30px;
     max-width: 800px;
     text-align: left;
@@ -72,7 +79,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #FEFEFE;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* Offerings Section */
@@ -95,7 +102,7 @@ body {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 10px #000;
     padding: 20px;
@@ -115,6 +122,184 @@ body {
 .card h3 {
     margin-top: 15px;
     color: #3D6B3B;
+}
+
+/* ===== About Page ===== */
+/* Hero Section */
+.about-hero {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-hero .overlay {
+    background-color: #00000050;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+}
+
+/* Content Section */
+.about-section {
+    background-color: #F9F5E5;
+    padding: 60px 15%;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-style: italic;
+    color: #2E4D35;
+}
+
+.highlight {
+    color: #5ca660;
+    font-weight: 600;
+}
+
+.about-image img {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* ===== Contacts Page ===== */
+/* Hero Section */
+.contact-hero {
+    height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contact-hero .overlay {
+    background-color: #00000050;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+}
+
+/* Contact Form & Info Section */
+.contact-section {
+    background-color: #F9F5E5;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Side Form Section */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    color: #101010;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-form label {
+    font-weight: 500;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #101010;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #F9F5E5;
+    outline: none;
+    color: #101010;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.submit-button {
+    background-color: #3D6B3B;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.submit-button:hover {
+    background-color: #2B4D2A;
+}
+
+/* Right Side Info Section */
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    color: #101010;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info img {
+    width: 18px;
+    height: 18px;
 }
 
 /* Footer */
@@ -149,6 +334,12 @@ footer .quick-links ul li {
 footer .quick-links ul li a {
     color: #3D6B3B;
     text-decoration: none;
+}
+
+footer .quick-links ul li a:hover {
+    color: #3D6B3B;
+    text-decoration: underline;
+    transition: text 0.5s ease;
 }
 
 .footer-logo img {
